@@ -1,0 +1,243 @@
+ {
+  "personal": {
+    "name": "Mohammed Owaish Khumar",
+    "title": "Software Developer",
+    "subtitle": "Backend Specialist | .NET | APIs | Data-driven Applications",
+    "email": "khumarowaish@gmail.com",
+    "phone": "+91 7045544485",
+    "location": "Mumbai, Maharashtra, India",
+    "profileImage": "/api/placeholder/300/300",
+    "description": "Passionate about building scalable backend systems and crafting efficient APIs. Currently working at Sportz Interactive, developing data-driven solutions for global sports organizations.",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/owaishkhumar",
+      "github": "https://github.com/owaishkhumar",
+      "email": "mailto:khumarowaish@gmail.com"
+    },
+    "yearsOfExperience": 1,
+    "footerDescription": "Passionate software developer specializing in backend technologies, building scalable solutions and crafting efficient APIs. Always ready to take on new challenges and create impactful software."
+  },
+  "about": {
+    "subtitle": "Passionate software developer with a focus on backend technologies and scalable solutions.",
+    "summary": "Motivated and detail-oriented Software Developer with a B.Tech in Electronics & Telecommunication Engineering, currently working at Sportz Interactive. Skilled in backend development, problem-solving, and quick adaptation to new technologies. Passionate about leveraging strong analytical and technical skills to build scalable solutions, with a continuous commitment to learning and professional growth. Eager to contribute to innovative projects and drive impactful results in the software development industry.",
+    "highlights": [
+      "Backend development specialist with expertise in .NET technologies",
+      "Experience in building scalable web applications and RESTful APIs",
+      "Strong analytical and problem-solving skills",
+      "Quick adaptation to new technologies and frameworks",
+      "Collaborative team player with leadership experience"
+    ]
+  },
+  "skills": {
+    "programmingLanguages": ["C/C++", "C#", "JavaScript", "Python"],
+    "backendTechnologies": ["Node.js", "Express.js", "ASP.NET Core", "ASP.NET MVC", ".NET Web API"],
+    "frontendTechnologies": ["React.js", "HTML5", "CSS3"],
+    "databases": ["MongoDB", "PostgreSQL", "SQL", "NoSQL", "Redis"],
+    "cloudServices": ["AWS (EC2, S3, RDS, CloudWatch)"],
+    "otherTechnologies": ["Firebase", "MERN Stack", "IoT"],
+    "developmentTools": ["Git", "GitHub", "Visual Studio", "Visual Studio Code", "Microsoft Office"],
+    "coreCompetencies": ["Object-Oriented Programming (OOP)", "RESTful API Development", "Data Structures and Algorithms", "Web Application Development", "Software Version Control", "Cross-functional Collaboration"]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "title": "Junior Associate Software Developer",
+      "company": "Sportz Interactive",
+      "location": "Goregaon, Mumbai",
+      "duration": "July 2024 - Present",
+      "type": "Full-time",
+      "description": "Designing and maintaining robust backend systems focusing on clean architecture, performance tuning, and modular development.",
+      "responsibilities": [
+        "Designed and maintained robust backend systems using ASP.NET Web API, ASP.NET MVC, PostgreSQL, and Redis, focusing on clean architecture, performance tuning, and modular development",
+        "Deployed, monitored, and managed cloud infrastructure using Amazon Web Services (AWS) — including EC2, S3, RDS, CloudWatch, and related services for seamless application delivery",
+        "Collaborated closely with cross-functional teams (Product, QA, Design) in agile environments to define requirements, resolve challenges, and deliver high-quality planning experiences",
+        "Applied expertise in Object-Oriented Programming (OOP), RESTful API development, and software version control using Git/GitHub",
+        "Developed and maintained data-driven gaming solutions to enhance fan engagement and digital interactivity for global sports organizations",
+        "Engineered and scaled the Quiz Engine platform — a dynamic backend system designed to generate customized quiz-based games targeted at client needs and sporting events",
+        "Independently developed predictor-based games, enabling fans to forecast match outcomes and player performances in real time, boosting user engagement and retention",
+        "Built and deployed the interactive Hand Cricket game, delivering a lightweight, engaging experience designed specifically for mobile and web platforms",
+        "Delivered successful solutions for prestigious clients such as UEFA, Wisden, ICC, AngelOne, and Gujarat Titans, ensuring adherence to high standards in scalability, performance, and innovation"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Web Development Intern",
+      "company": "Alpha DigiAll",
+      "location": "Mumbai",
+      "duration": "2022 | 6 Weeks",
+      "type": "Internship",
+      "description": "Focused on enhancing functionality and user experience in web application projects.",
+      "responsibilities": [
+        "Developed and contributed to web application projects, focusing on enhancing functionality and user experience",
+        "Gained hands-on experience with JavaScript and its frameworks, deepening knowledge in frontend and backend development",
+        "Learned and implemented RESTful APIs, creating endpoints to support seamless communication between client and server applications"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "B.Tech in Electronics & Telecommunication Engineering",
+      "institution": "Dwarkadas J. Sanghvi College of Engineering",
+      "location": "Mumbai, Maharashtra, India",
+      "duration": "June 2024",
+      "grade": "CGPA: 7.55"
+    },
+    {
+      "id": 2,
+      "degree": "Diploma in Electronics & Telecommunication",
+      "institution": "M.H. Saboo Siddik Polytechnic",
+      "location": "Mumbai, Maharashtra, India",
+      "duration": "August 2021",
+      "grade": "96.18%"
+    },
+    {
+      "id": 3,
+      "degree": "X(SCC)",
+      "institution": "St. Joseph's High School",
+      "location": "Mumbai, Maharashtra, India",
+      "duration": "March 2018",
+      "grade": "83%"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E Commerce Rest-API",
+      "description": "Developed a scalable E-commerce REST API using Node.js and MongoDB, enabling efficient product management, user authentication, shopping cart operations, and order processing. Focused on creating a seamless customer experience with secure and optimized backend services.",
+      "technologies": ["Node.js", "MongoDB", "Express.js", "RESTful API"],
+      "githubUrl": "#",
+      "liveUrl": null,
+      "features": [
+        "Scalable architecture with Node.js and MongoDB",
+        "User authentication and authorization",
+        "Product management system",
+        "Shopping cart operations",
+        "Order processing workflow",
+        "Secure backend services"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Blog Web Application",
+      "description": "Built a dynamic Blog Web Application utilizing Node.js, Express.js, and MongoDB. Implemented token-based authentication for secure user access, password hashing for data protection, and integrated image upload functionality using Multer for enhanced user interaction.",
+      "technologies": ["Node.js", "Express.js", "MongoDB", "Multer", "JWT"],
+      "githubUrl": "#",
+      "liveUrl": null,
+      "features": [
+        "Dynamic blog creation and management",
+        "Token-based authentication",
+        "Password hashing for security",
+        "Image upload functionality with Multer",
+        "User-friendly interface",
+        "Secure data protection"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Agricultural Bot using IoT and Web Application",
+      "description": "Designed and developed a web application using HTML, CSS, JavaScript, and related frameworks for real-time monitoring and control of an agricultural robot. Integrated IoT sensors for temperature, humidity, and soil moisture detection; data was stored and retrieved from Firebase, enabling remote robot control and real-time data visualization.",
+      "technologies": ["HTML", "CSS", "JavaScript", "IoT", "Firebase", "Sensors"],
+      "githubUrl": "#",
+      "liveUrl": null,
+      "features": [
+        "Real-time agricultural monitoring",
+        "IoT sensors integration",
+        "Temperature and humidity tracking",
+        "Soil moisture detection",
+        "Firebase data storage",
+        "Remote robot control",
+        "Real-time data visualization"
+      ]
+    }   
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "title": "Participated in Fastest Coder Hackathon by Microsoft Azure",
+      "year": "2023",
+      "description": "Participated in competitive programming hackathon organized by Microsoft Azure"
+    },
+    {
+      "id": 2,
+      "title": "WON 1st Prize in DJ SPARK State Level Project Competition",
+      "year": "2022",
+      "description": "Secured first position in state-level project competition"
+    },
+    {
+      "id": 3,
+      "title": "WON 1st Prize in Paper Presentation",
+      "year": "2021",
+      "description": "Won first prize in technical paper presentation competition"
+    },
+    {
+      "id": 4,
+      "title": "Virtual Implant Training in Machine Learning",
+      "year": "2021",
+      "description": "Completed specialized training program in Machine Learning technologies"
+    },
+    {
+      "id": 5,
+      "title": "Student Coordinator in Technical Quiz & Workshop",
+      "year": "2020",
+      "description": "Led and coordinated technical workshops and quiz competitions"
+    }
+  ],
+  "skillsGained": {
+    "backendDevelopment": {
+      "title": "Backend Development",
+      "description": "Server-side technologies & databases",
+      "skills": ["ASP.NET Web API", "ASP.NET MVC", "PostgreSQL", "Redis", "OOP Design"]
+    },
+    "cloudDevOps": {
+      "title": "Cloud & DevOps", 
+      "description": "Cloud platforms & deployment tools",
+      "skills": ["AWS EC2", "AWS S3", "AWS RDS", "CloudWatch", "Git/GitHub"]
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "description": "Professional & collaboration skills", 
+      "skills": ["Agile Development", "Cross-functional Teams", "Problem Solving", "Performance Tuning", "Client Relations"]
+    }
+  },
+  "careerProgression": [
+    {
+      "id": 1,
+      "phase": "Learning Phase",
+      "title": "Intern", 
+      "duration": "2022",
+      "description": "Started as Web Development Intern",
+      "icon": "🎓"
+    },
+    {
+      "id": 2,
+      "phase": "Growth Phase",
+      "title": "Developer",
+      "duration": "2024 - Present", 
+      "description": "Software Developer",
+      "icon": "💼",
+      "current": true
+    },
+    {
+      "id": 3,
+      "phase": "Excellence Phase", 
+      "title": "Goals",
+      "duration": "Future",
+      "description": "Senior Developer & Tech Leadership",
+      "icon": "🚀"
+    }
+  ],
+  "leadership": [
+    {
+      "id": 1,
+      "position": "Head of Department",
+      "organization": "DJSCE Trinity (College Festival)",
+      "description": "Coordinated a team of 15 co-committee members along with 30+ Volunteers",
+      "responsibilities": [
+        "Led a diverse team of 15 committee members",
+        "Managed and coordinated 30+ volunteers",
+        "Organized college festival events",
+        "Ensured smooth execution of multiple activities"
+      ]
+    }
+  ]
+}
