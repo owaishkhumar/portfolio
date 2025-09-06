@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Navbar from './components/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -14,6 +15,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <ThemeProvider>
+      <ScrollToTop />
       <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-300">
         <Navbar />
         

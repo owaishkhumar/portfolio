@@ -1,5 +1,6 @@
 import React from 'react'
 import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import data from '../static-assets/data.json'
 
 const Footer = () => {
@@ -77,12 +78,13 @@ const Footer = () => {
               <ul className="space-y-0.5">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
-                    <a
-                      href={link.href}
+                    <Link
+                      key={link.href}
+                      to={link.href}
                       className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 text-sm"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

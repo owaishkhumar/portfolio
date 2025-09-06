@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Important SEO pages
+Allow: /about
+Allow: /skills
+Allow: /experience
+Allow: /education
+Allow: /projects
+Allow: /contact
+
+# Static assets
+Allow: /src/
+Allow: /static-assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+
+# Sitemap location
+Sitemap: https://owaishkhumar.netlify.app/sitemap.xml
+
+# Crawl-delay for being polite to search engines
+Crawl-delay: 1
