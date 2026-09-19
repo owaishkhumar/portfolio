@@ -38,8 +38,13 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity">
-            OK
+          <Link
+            to="/"
+            className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+            aria-label="Mohammed Owaish Khumar home"
+          >
+            <span className="sr-only">Mohammed Owaish Khumar</span>
+            <span aria-hidden="true">OK</span>
           </Link>
 
           {/* Desktop Navigation */}

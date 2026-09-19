@@ -98,46 +98,42 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    {/* Notable Projects/Achievements for current role */}
-                    {exp.title === "Junior Associate Software Developer" && (
+                    {/* Notable Projects/Achievements - Dynamic from data.json */}
+                    {(exp.notableProjects || exp.prestigiousClients) && (
                       <div className="mt-6 p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg border border-primary-200 dark:border-primary-700/30">
-                        <h5 className="font-semibold text-primary-800 dark:text-primary-200 mb-2">
-                          🎯 Notable Projects
-                        </h5>
-                        <div className="grid grid-cols-2 gap-2 text-sm">
-                          <div className="flex items-center space-x-1">
-                            <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
-                            <span className="text-primary-700 dark:text-primary-300">Quiz Engine Platform</span>
-                          </div>
-                          <div className="flex items-center space-x-1">
-                            <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
-                            <span className="text-primary-700 dark:text-primary-300">Hand Cricket Game</span>
-                          </div>
-                          <div className="flex items-center space-x-1">
-                            <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
-                            <span className="text-primary-700 dark:text-primary-300">Predictor Games</span>
-                          </div>
-                          <div className="flex items-center space-x-1">
-                            <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
-                            <span className="text-primary-700 dark:text-primary-300">Enterprise Solutions</span>
-                          </div>
-                        </div>
+                        {exp.notableProjects && exp.notableProjects.length > 0 && (
+                          <>
+                            <h5 className="font-semibold text-primary-800 dark:text-primary-200 mb-2">
+                              🎯 Notable Projects
+                            </h5>
+                            <div className="grid grid-cols-2 gap-2 text-sm mb-3">
+                              {exp.notableProjects.map((project, index) => (
+                                <div key={index} className="flex items-center space-x-1">
+                                  <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
+                                  <span className="text-primary-700 dark:text-primary-300">{project}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </>
+                        )}
                         
-                        <div className="mt-3">
-                          <h6 className="font-medium text-primary-800 dark:text-primary-200 mb-1">
-                            🏆 Prestigious Clients
-                          </h6>
-                          <div className="flex flex-wrap gap-2">
-                            {['UEFA', 'Wisden', 'ICC', 'AngelOne', 'Gujarat Titans'].map((client) => (
-                              <span 
-                                key={client}
-                                className="px-2 py-1 bg-primary-100 dark:bg-primary-800/30 text-primary-700 dark:text-primary-300 text-xs rounded-full"
-                              >
-                                {client}
-                              </span>
-                            ))}
+                        {exp.prestigiousClients && exp.prestigiousClients.length > 0 && (
+                          <div className={exp.notableProjects ? "mt-3" : ""}>
+                            <h6 className="font-medium text-primary-800 dark:text-primary-200 mb-1">
+                              🏆 Prestigious Clients
+                            </h6>
+                            <div className="flex flex-wrap gap-2">
+                              {exp.prestigiousClients.map((client, index) => (
+                                <span 
+                                  key={index}
+                                  className="px-2 py-1 bg-primary-100 dark:bg-primary-800/30 text-primary-700 dark:text-primary-300 text-xs rounded-full"
+                                >
+                                  {client}
+                                </span>
+                              ))}
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
                     )}
                   </div>

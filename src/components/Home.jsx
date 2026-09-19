@@ -44,7 +44,11 @@ const Home = () => {
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-gray-900 dark:text-white">Hi, I'm </span>
-                <span className="gradient-text">{personal.name.split(' ')[1]}</span>
+                <span className="block mt-1">
+                  <span className="text-gray-900 dark:text-white">Mohammed </span>
+                  <span className="gradient-text">Owaish</span>
+                  <span className="text-gray-900 dark:text-white"> Khumar</span>
+                </span>
               </h1>
               
               <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300">
@@ -57,9 +61,9 @@ const Home = () => {
             </div>
 
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
-              Passionate about building scalable backend systems and crafting efficient APIs. 
-              Currently working at Sportz Interactive, developing data-driven solutions for 
-              global sports organizations.
+              I'm Mohammed Owaish Khumar, a software developer passionate about building
+              scalable backend systems and crafting efficient APIs. Currently working at
+              Sportz Interactive, developing data-driven solutions for global sports organizations.
             </p>
 
             {/* Social Links */}
@@ -71,7 +75,7 @@ const Home = () => {
                     key={social.name}
                     href={social.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel={social.name === 'Email' ? 'noopener noreferrer' : 'me noopener noreferrer'}
                     className={`p-3 rounded-lg bg-gray-100 dark:bg-dark-800 text-gray-600 dark:text-gray-400 transition-all duration-200 ${social.color} hover:shadow-md hover:scale-105`}
                     aria-label={social.name}
                   >
@@ -132,7 +136,7 @@ const Home = () => {
             <div className="relative lg:mt-12 xl:mt-16">
               <img
                 src={profilePic}
-                alt={personal.name}
+                alt="Mohammed Owaish Khumar, Software Developer in Mumbai"
                 className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
               />
             </div>

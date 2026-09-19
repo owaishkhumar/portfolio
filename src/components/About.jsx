@@ -30,7 +30,7 @@ const About = () => {
         <div className="space-y-8">
           {/* Header */}
           <div className="text-center">
-            <h1 className="section-title">About Me</h1>
+            <h1 className="section-title">About Mohammed Owaish Khumar</h1>
             <p className="section-subtitle">
               {about.subtitle}
             </p>

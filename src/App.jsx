@@ -11,10 +11,12 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Seo from './components/Seo'
 
 function App() {
   return (
     <ThemeProvider>
+      <Seo />
       <ScrollToTop />
       <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-300">
         <Navbar />

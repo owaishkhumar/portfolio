@@ -6,6 +6,12 @@ const Projects = () => {
   const { projects } = data
   const [selectedProject, setSelectedProject] = useState(null)
 
+  // Function to truncate text and add "...Read more"
+  const truncateText = (text, maxLength = 300) => {
+    if (text.length <= maxLength) return text
+    return text.substring(0, maxLength).trim()
+  }
+
   const getProjectIcon = (title) => {
     if (title.toLowerCase().includes('api')) return Database
     if (title.toLowerCase().includes('web')) return Globe
@@ -15,20 +21,45 @@ const Projects = () => {
 
   const getTechColor = (tech) => {
     const colors = {
+      // Frontend Technologies
       'Node.js': 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
       'React.js': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
-      'MongoDB': 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
       'Express.js': 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
-      'PostgreSQL': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
       'JavaScript': 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300',
       'HTML': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
       'CSS': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+      
+      // Backend Technologies
+      'C#': 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+      'ASP.NET Core': 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300',
+      'ASP.NET Web API': 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300',
+      'ASP.NET MVC': 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300',
+      'Worker Services': 'bg-slate-100 text-slate-700 dark:bg-slate-900/30 dark:text-slate-300',
+      'RESTful API': 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300',
+      
+      // Databases & ORM
+      'PostgreSQL': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+      'MongoDB': 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+      'Entity Framework/Dapper': 'bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300',
+      
+      // Caching & Messaging
+      'Redis': 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+      'AWS ElastiCache': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+      'RabbitMQ': 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
+      
+      // Cloud & DevOps
+      'AWS': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+      'Docker': 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300',
+      
+      // Authentication & Security
+      'JWT': 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+      'JWT Authentication': 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+      
+      // Other Technologies
       'Firebase': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
       'IoT': 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
-      'JWT': 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
       'Multer': 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
-      'Sensors': 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300',
-      'RESTful API': 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300'
+      'Sensors': 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300'
     }
     return colors[tech] || 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300'
   }
@@ -53,11 +84,11 @@ const Projects = () => {
               return (
                 <div
                   key={project.id}
-                  className="flex-1 min-w-[300px] max-w-[400px] bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
+                  className="flex flex-col flex-1 min-w-[300px] max-w-[400px] bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
                   onClick={() => setSelectedProject(project)}
                 >
                   {/* Project Header */}
-                  <div className="p-6 pb-4">
+                  <div className="p-6 pb-4 flex-grow">
                     <div className="flex items-start justify-between mb-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg">
                         <ProjectIcon className="h-6 w-6 text-white" />
@@ -92,9 +123,23 @@ const Projects = () => {
                       {project.title}
                     </h3>
                     
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                      {project.description}
-                    </p>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 text-justify">
+                      {truncateText(project.description)}
+                      {project.description.length > 300 && (
+                        <>
+                          ...{' '}
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              setSelectedProject(project)
+                            }}
+                            className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium hover:underline transition-colors duration-200"
+                          >
+                            Read more
+                          </button>
+                        </>
+                      )}
+                    </div>
                   </div>
 
                   {/* Technologies */}
@@ -117,7 +162,7 @@ const Projects = () => {
                   </div>
 
                   {/* View Details Button */}
-                  <div className="px-6 pb-6">
+                  <div className="px-6 pb-6 mt-auto">
                     <button className="w-full py-2 px-4 bg-gray-50 dark:bg-dark-700 hover:bg-primary-50 dark:hover:bg-primary-900/20 text-gray-700 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-300 rounded-lg transition-all duration-200 text-sm font-medium group-hover:bg-primary-50 dark:group-hover:bg-primary-900/20">
                       View Details →
                     </button>
@@ -210,7 +255,7 @@ const Projects = () => {
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 text-justify">
                 {selectedProject.description}
               </p>
 

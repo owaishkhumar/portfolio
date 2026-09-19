@@ -1,3 +1,4 @@
+# Enable Prerendering in Netlify: Site configuration > Build & deploy > Post processing
 [build]
   publish = "dist"
   command = "npm run build"
@@ -15,6 +16,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Robots-Tag = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 
 [[headers]]
   for = "/*.html"
@@ -49,6 +51,7 @@
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
     Cache-Control = "public, max-age=86400"
 
 [[headers]]

@@ -1,41 +1,57 @@
- {
+{
   "personal": {
     "name": "Mohammed Owaish Khumar",
     "title": "Software Developer",
-    "subtitle": "Backend Specialist | .NET | APIs | Data-driven Applications",
+    "subtitle": "Backend Specialist | .NET Core | APIs | Cloud",
     "email": "khumarowaish@gmail.com",
     "phone": "+91 7045544485",
     "location": "Mumbai, Maharashtra, India",
     "profileImage": "/api/placeholder/300/300",
-    "description": "Passionate about building scalable backend systems and crafting efficient APIs. Currently working at Sportz Interactive, developing data-driven solutions for global sports organizations.",
+    "description": "Passionate about building scalable backend systems and crafting efficient, secure APIs. Currently working at Sportz Interactive, developing data-driven fan-engagement platforms for global sports organizations, including one deployment scaled to 1.5-2M concurrent users.",
     "socialLinks": {
-      "linkedin": "https://linkedin.com/in/owaishkhumar",
+      "linkedin": "https://www.linkedin.com/in/owaishkhumar",
       "github": "https://github.com/owaishkhumar",
       "email": "mailto:khumarowaish@gmail.com"
     },
-    "yearsOfExperience": 1,
-    "footerDescription": "Passionate software developer specializing in backend technologies, building scalable solutions and crafting efficient APIs. Always ready to take on new challenges and create impactful software."
+    "yearsOfExperience": 2,
+    "footerDescription": "Passionate software developer specializing in backend technologies, building scalable solutions and crafting efficient, secure APIs. Always ready to take on new challenges and create impactful software."
   },
   "about": {
     "subtitle": "Passionate software developer with a focus on backend technologies and scalable solutions.",
-    "summary": "Motivated and detail-oriented Software Developer with a B.Tech in Electronics & Telecommunication Engineering, currently working at Sportz Interactive. Skilled in backend development, problem-solving, and quick adaptation to new technologies. Passionate about leveraging strong analytical and technical skills to build scalable solutions, with a continuous commitment to learning and professional growth. Eager to contribute to innovative projects and drive impactful results in the software development industry.",
+    "summary": "Mohammed Owaish Khumar is a motivated and detail-oriented Software Developer with a B.Tech in Electronics & Telecommunication Engineering, currently working at Sportz Interactive. Skilled in backend development with C# and ASP.NET Core, RESTful API design, database/caching architecture, and containerized deployment. Experienced with JWT-based API authentication, Entity Framework/Dapper for data access, Swagger/OpenAPI documentation, and Agile/Scrum delivery. Helped scale a production fan-engagement platform to reliably serve 1.5-2M concurrent users through caching strategy and database query optimization. Passionate about leveraging strong analytical and technical skills to build scalable solutions, with a continuous commitment to learning and professional growth.",
     "highlights": [
-      "Backend development specialist with expertise in .NET technologies",
-      "Experience in building scalable web applications and RESTful APIs",
-      "Strong analytical and problem-solving skills",
-      "Quick adaptation to new technologies and frameworks",
-      "Collaborative team player with leadership experience"
+      "Backend development specialist with expertise in C#, .NET, and ASP.NET Core",
+      "Experience building and securing RESTful APIs with JWT authentication and Swagger/OpenAPI documentation",
+      "Scaled a production platform to reliably serve 1.5-2M concurrent users via caching and query optimization",
+      "Hands-on with Docker containerization and CI/CD-driven release management (Jenkins, Spinnaker)",
+      "Strong analytical and problem-solving skills with quick adaptation to new technologies",
+      "Collaborative team player working in Agile/Scrum environments, with leadership experience"
     ]
   },
   "skills": {
-    "programmingLanguages": ["C/C++", "C#", "JavaScript", "Python"],
-    "backendTechnologies": ["Node.js", "Express.js", "ASP.NET Core", "ASP.NET MVC", ".NET Web API"],
+    "programmingLanguages": ["C#", "JavaScript", "Python", "SQL", "C/C++"],
+    "backendTechnologies": [".NET", "ASP.NET Core", "ASP.NET Web API", "ASP.NET MVC", "RESTful APIs", "Worker Services", "Node.js", "Express.js"],
     "frontendTechnologies": ["React.js", "HTML5", "CSS3"],
-    "databases": ["MongoDB", "PostgreSQL", "SQL", "NoSQL", "Redis"],
-    "cloudServices": ["AWS (EC2, S3, RDS, CloudWatch)"],
+    "databases": ["PostgreSQL", "Amazon Aurora PostgreSQL", "MongoDB", "SQL", "NoSQL"],
+    "cachingAndMessaging": ["Redis", "AWS ElastiCache", "RabbitMQ"],
+    "apiSecurityAndDocs": ["JWT Authentication", "OAuth", "Swagger/OpenAPI"],
+    "orm": ["Entity Framework", "Dapper"],
+    "cloudServices": ["AWS EC2", "AWS S3", "AWS RDS", "AWS CloudWatch"],
+    "devOpsAndContainerization": ["Docker", "Jenkins", "Spinnaker", "CI/CD"],
     "otherTechnologies": ["Firebase", "MERN Stack", "IoT"],
     "developmentTools": ["Git", "GitHub", "Visual Studio", "Visual Studio Code", "Microsoft Office"],
-    "coreCompetencies": ["Object-Oriented Programming (OOP)", "RESTful API Development", "Data Structures and Algorithms", "Web Application Development", "Software Version Control", "Cross-functional Collaboration"]
+    "coreCompetencies": [
+      "Object-Oriented Programming (OOP)",
+      "RESTful API Development",
+      "API Security & Authentication",
+      "Data Structures and Algorithms",
+      "Caching Strategy",
+      "Containerized Deployment",
+      "Agile/Scrum Delivery",
+      "Web Application Development",
+      "Software Version Control",
+      "Cross-functional Collaboration"
+    ]
   },
   "experience": [
     {
@@ -45,17 +61,38 @@
       "location": "Goregaon, Mumbai",
       "duration": "July 2024 - Present",
       "type": "Full-time",
-      "description": "Designing and maintaining robust backend systems focusing on clean architecture, performance tuning, and modular development.",
+      "description": "Designing and maintaining robust backend systems focusing on clean architecture, performance tuning, API security, and modular development.",
       "responsibilities": [
-        "Designed and maintained robust backend systems using ASP.NET Web API, ASP.NET MVC, PostgreSQL, and Redis, focusing on clean architecture, performance tuning, and modular development",
-        "Deployed, monitored, and managed cloud infrastructure using Amazon Web Services (AWS) — including EC2, S3, RDS, CloudWatch, and related services for seamless application delivery",
-        "Collaborated closely with cross-functional teams (Product, QA, Design) in agile environments to define requirements, resolve challenges, and deliver high-quality planning experiences",
-        "Applied expertise in Object-Oriented Programming (OOP), RESTful API development, and software version control using Git/GitHub",
-        "Developed and maintained data-driven gaming solutions to enhance fan engagement and digital interactivity for global sports organizations",
-        "Engineered and scaled the Quiz Engine platform — a dynamic backend system designed to generate customized quiz-based games targeted at client needs and sporting events",
-        "Independently developed predictor-based games, enabling fans to forecast match outcomes and player performances in real time, boosting user engagement and retention",
-        "Built and deployed the interactive Hand Cricket game, delivering a lightweight, engaging experience designed specifically for mobile and web platforms",
-        "Delivered successful solutions for prestigious clients such as UEFA, Wisden, ICC, AngelOne, and Gujarat Titans, ensuring adherence to high standards in scalability, performance, and innovation"
+        "Built and maintained backend applications for Fantasy, Quiz, Predictor, and Polling fan-engagement products across ten+ client engagements, including UEFA, The R&A (The Open Championship), World Surf League, ICC, Wisden, Scuderia Ferrari, AngelOne, KKR, European Athletics, and Gujarat Titans",
+        "Designed and implemented RESTful APIs in C# and ASP.NET Core/Web API for team management, league configuration, scoring, and authentication, using Entity Framework/Dapper for data access and JWT-based authentication to secure client-facing endpoints",
+        "Documented APIs using Swagger/OpenAPI to give client and internal teams a consistent, browsable reference for endpoint contracts",
+        "Built Worker Services for scheduled and background processing, and RabbitMQ consumers to ingest live sports data feeds for real-time scoring and leaderboard updates",
+        "Developed ASP.NET MVC administrative applications used daily by non-technical Operations teams to configure live games and manage content",
+        "Scaled the UEFA Fantasy platform to reliably serve 1.5-2M users by introducing a Redis/AWS ElastiCache caching layer and tuning PostgreSQL/Aurora RDS queries for high read concurrency during live match windows",
+        "Containerized backend services using Docker for consistent local development and testing environments",
+        "Managed CI/CD-driven release promotion across dev, staging, and production using Jenkins and Spinnaker, and monitored application health via AWS CloudWatch dashboards and structured logs",
+        "Collaborated closely with cross-functional teams (Product, QA, Design) in Agile/Scrum sprints to define requirements, resolve challenges, and deliver high-quality client experiences",
+        "Engineered the Quiz, Predictor, and Polling engines — configurable backend systems generating customized quiz, prediction, and voting experiences for client-specific sporting events",
+        "Built and deployed the interactive Hand Cricket game for Gujarat Titans, delivering a real-time one-on-one gameplay experience for mobile and web platforms"
+      ],
+      "notableProjects": [  
+        "Fantasy Gaming",
+        "Quiz Engine",
+        "Polling Engine",
+        "Predictor Engine",
+        "Hand Cricket Game"
+      ],
+      "prestigiousClients": [
+        "UEFA",
+        "Scuderia Ferrari",
+        "The R&A (The Open Championship)",
+        "World Surf League",
+        "Wisden",
+        "ICC",
+        "AngelOne",
+        "KKR",
+        "European Athletics",
+        "Gujarat Titans"
       ]
     },
     {
@@ -92,7 +129,7 @@
     },
     {
       "id": 3,
-      "degree": "X(SCC)",
+      "degree": "X (SSC)",
       "institution": "St. Joseph's High School",
       "location": "Mumbai, Maharashtra, India",
       "duration": "March 2018",
@@ -102,7 +139,58 @@
   "projects": [
     {
       "id": 1,
+      "title": "Sports Fantasy Gaming Platform",
+      "client": "UEFA, The R&A (The Open Championship), World Surf League",
+      "type": "Professional",
+      "description": "Built backend for team creation, league management, leaderboards, SSO authentication, and live scoring for each client, following a common architectural pattern. Extended the platform to support a combined men's and women's competition format for World Surf League, requiring schema and scoring-logic changes to handle dual-tournament state within a single fantasy league. Scaled deployments from 20K users (smaller clients) to 1.5-2M users (UEFA), with caching and query optimization as the primary levers for handling the difference in load.",
+      "technologies": ["C#", "ASP.NET Core", "ASP.NET Web API", "Entity Framework/Dapper", "PostgreSQL", "Redis", "AWS ElastiCache", "RabbitMQ", "Docker", "JWT Authentication"],
+      "githubUrl": "#",
+      "liveUrl": null,
+      "features": [
+        "Team creation, league management, and leaderboards",
+        "SSO authentication",
+        "Live, real-time scoring via RabbitMQ data feeds",
+        "Combined men's and women's competition format (World Surf League)",
+        "Scaled to 1.5-2M concurrent users via Redis/ElastiCache caching and query optimization"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Quiz, Predictor & Polling Engines",
+      "client": "Scuderia Ferrari, ICC, Wisden, AngelOne, KKR, European Athletics",
+      "type": "Professional",
+      "description": "Built three related but distinct engines (quiz, prediction, polling) following a similar backend pattern for leagues, leaderboards, and administrative configuration, with client-specific question/prediction/voting logic. Implemented Redis-backed real-time leaderboards and MVC administrative consoles giving each client's operations team direct control over question banks, prediction windows, and poll configuration without code changes.",
+      "technologies": ["C#", "ASP.NET Core", "ASP.NET MVC", "PostgreSQL", "Redis", "AWS"],
+      "githubUrl": "#",
+      "liveUrl": null,
+      "features": [
+        "Configurable quiz, prediction, and polling logic per client",
+        "Redis-backed real-time leaderboards",
+        "MVC administrative consoles for non-technical operations teams",
+        "Client-specific question banks, prediction windows, and poll configuration"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Hand Cricket Game",
+      "client": "Gujarat Titans",
+      "type": "Professional",
+      "description": "Built a real-time one-on-one gameplay engine on the ASP.NET Core/Worker Service architecture pattern, including turn-based game-state management, live leaderboard, and administrative game-management tooling, delivered as a lightweight experience for mobile and web platforms.",
+      "technologies": ["C#", "ASP.NET Core", "Worker Services", "Redis"],
+      "githubUrl": "#",
+      "liveUrl": null,
+      "features": [
+        "Real-time one-on-one gameplay",
+        "Turn-based game-state management",
+        "Live leaderboard",
+        "Administrative game-management tooling"
+      ]
+    },
+    {
+      "id": 4,
       "title": "E Commerce Rest-API",
+      "client": "Personal Project",
+      "type": "Personal",
       "description": "Developed a scalable E-commerce REST API using Node.js and MongoDB, enabling efficient product management, user authentication, shopping cart operations, and order processing. Focused on creating a seamless customer experience with secure and optimized backend services.",
       "technologies": ["Node.js", "MongoDB", "Express.js", "RESTful API"],
       "githubUrl": "#",
@@ -117,8 +205,10 @@
       ]
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "Blog Web Application",
+      "client": "Personal Project",
+      "type": "Personal",
       "description": "Built a dynamic Blog Web Application utilizing Node.js, Express.js, and MongoDB. Implemented token-based authentication for secure user access, password hashing for data protection, and integrated image upload functionality using Multer for enhanced user interaction.",
       "technologies": ["Node.js", "Express.js", "MongoDB", "Multer", "JWT"],
       "githubUrl": "#",
@@ -133,8 +223,10 @@
       ]
     },
     {
-      "id": 3,
+      "id": 6,
       "title": "Agricultural Bot using IoT and Web Application",
+      "client": "Personal Project",
+      "type": "Personal",
       "description": "Designed and developed a web application using HTML, CSS, JavaScript, and related frameworks for real-time monitoring and control of an agricultural robot. Integrated IoT sensors for temperature, humidity, and soil moisture detection; data was stored and retrieved from Firebase, enabling remote robot control and real-time data visualization.",
       "technologies": ["HTML", "CSS", "JavaScript", "IoT", "Firebase", "Sensors"],
       "githubUrl": "#",
@@ -148,7 +240,7 @@
         "Remote robot control",
         "Real-time data visualization"
       ]
-    }   
+    }
   ],
   "achievements": [
     {
@@ -185,25 +277,25 @@
   "skillsGained": {
     "backendDevelopment": {
       "title": "Backend Development",
-      "description": "Server-side technologies & databases",
-      "skills": ["ASP.NET Web API", "ASP.NET MVC", "PostgreSQL", "Redis", "OOP Design"]
+      "description": "Server-side technologies, data access & messaging",
+      "skills": ["ASP.NET Web API", "ASP.NET MVC", "PostgreSQL", "Redis", "RabbitMQ", "Entity Framework / Dapper", "JWT Authentication", "OOP Design"]
     },
     "cloudDevOps": {
-      "title": "Cloud & DevOps", 
-      "description": "Cloud platforms & deployment tools",
-      "skills": ["AWS EC2", "AWS S3", "AWS RDS", "CloudWatch", "Git/GitHub"]
+      "title": "Cloud & DevOps",
+      "description": "Cloud platforms, containerization & deployment tools",
+      "skills": ["AWS EC2", "AWS S3", "AWS RDS", "CloudWatch", "Docker", "Jenkins / Spinnaker", "Git/GitHub"]
     },
     "softSkills": {
       "title": "Soft Skills",
-      "description": "Professional & collaboration skills", 
-      "skills": ["Agile Development", "Cross-functional Teams", "Problem Solving", "Performance Tuning", "Client Relations"]
+      "description": "Professional & collaboration skills",
+      "skills": ["Agile/Scrum Delivery", "Cross-functional Teams", "Problem Solving", "Performance Tuning", "Client Relations"]
     }
   },
   "careerProgression": [
     {
       "id": 1,
       "phase": "Learning Phase",
-      "title": "Intern", 
+      "title": "Intern",
       "duration": "2022",
       "description": "Started as Web Development Intern",
       "icon": "🎓"
@@ -212,14 +304,14 @@
       "id": 2,
       "phase": "Growth Phase",
       "title": "Developer",
-      "duration": "2024 - Present", 
+      "duration": "2024 - Present",
       "description": "Software Developer",
       "icon": "💼",
       "current": true
     },
     {
       "id": 3,
-      "phase": "Excellence Phase", 
+      "phase": "Excellence Phase",
       "title": "Goals",
       "duration": "Future",
       "description": "Senior Developer & Tech Leadership",

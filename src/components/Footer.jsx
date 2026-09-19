@@ -58,7 +58,7 @@ const Footer = () => {
                     key={social.label}
                     href={social.href}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="me noopener noreferrer"
                     className="p-3 rounded-xl bg-gray-100 dark:bg-dark-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:scale-110 transition-all duration-200"
                     aria-label={social.label}
                   >

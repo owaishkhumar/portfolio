@@ -70,7 +70,7 @@ const Contact = () => {
         <div className="space-y-16">
           {/* Header */}
           <div className="text-center">
-            <h1 className="section-title">Get In Touch</h1>
+            <h1 className="section-title">Contact Mohammed Owaish Khumar</h1>
             <p className="section-subtitle">
               Let's discuss opportunities, collaborations, or just have a conversation about technology
             </p>
